@@ -1,0 +1,9 @@
+.box {
+  height: 64px;
+  width: 240px;
+  font-size: 13px;
+  background-color: #3e3047;
+  color: white;
+  border-color: #3e3047;
+  outline: none;
+}
