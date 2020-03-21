@@ -35,6 +35,13 @@ const Button = styled.button`
   font-size: 9px;
   width: 7rem;
   }
+  a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+    }
 `
 
 export default () => {
@@ -64,7 +71,7 @@ export default () => {
             しかしながら、GraphQLの理解は十分で無いため、引き続き学習を続けていきたい。<br></br>
           </p>
           <Link to="/"><Button>>>> Back</Button></Link>
-          <Link to="/"><Button>>>> Go to Gitgub </Button></Link>
+          <Button><a href="https://github.com/hiropalla1692/my-portfolio">>>> Go to Gitgub</a></Button>
         </Block>
       </Container>
     </Layout>

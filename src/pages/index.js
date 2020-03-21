@@ -96,9 +96,9 @@ export default () => (
                     </p>
                     <h4 style={{color: '#616161'}}>What I've been into </h4>
                     <p>
-                      - 洋書📗を頑張って読む<br></br>
-                      - 塩胡椒で適当にドレッシング🥗を自作する<br></br>
-                      - シャンパン🍾に詳しくなる<br></br>
+                      - レコード🎧収集<br></br>
+                      - アメリカ企業🇺🇸のAnnual Report読解<br></br>
+                      - Podcast📻運営<br></br>
                     </p>
                   </ProfileTextBox>
                 </Wrapper>

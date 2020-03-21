@@ -22,7 +22,7 @@ const WrapperInner = styled.div`
   align-items: center;
   color: white;
   height: 50px;
-  background-color: black;
+  background-color: #3e3047;
 `
 
 const Menu = styled.ul`
@@ -127,9 +127,8 @@ export default () => (
         <a href="/">HIROKUNI HONDA</a>
       </div>
       <Menu id="b">
-        <MenuList><a href="">ABOUT</a></MenuList>
         <MenuList><a href="http://cadillacs-in-our-dreams.surge.sh/">BLOG</a></MenuList>
-        <MenuList><a href="">PICTURE</a></MenuList>
+        <MenuList><a href="">CONTACT</a></MenuList>
         <Githubicon/>
       </Menu>
       <MenuBurger id="a" onClick={navSlide}>

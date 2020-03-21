@@ -9,6 +9,8 @@ display: flex;
 flex-flow: column nowrap;
 justify-content: center;
 height: 1080px;
+margin-top: 60px;
+margin-bottom: 60px;
 align-items: center;
 background-color: #fff1ff;
 font-family: 'Montserrat', sans-serif;

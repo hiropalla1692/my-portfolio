@@ -6,12 +6,13 @@ const GithubIcon = styled.svg`
   width: 20px;
   height: 20px;
   margin-left: 15px;
+  margin-top: 5px;
   fill: white;
 `
 
 export default () => {
   return (
-      <a href="https://github.com/hiropalla1692/vocamy">
+      <a href="https://github.com/hiropalla1692/">
       <GithubIcon 
         version="1.1"  
         xmlns="http://www.w3.org/2000/svg"  
