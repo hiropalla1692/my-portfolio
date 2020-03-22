@@ -9,9 +9,10 @@ const Wrapper = styled.div`
   max-width: 650;
   text-align: center;
   color: white;
-  background-color: #3e3047;
   padding: 0 1rem;
-
+  @media screen and (max-width:480px) {
+    flex-flow: column wrap;
+  }
   p {
     margin: 0;
     font-size: 12px;
@@ -46,7 +47,7 @@ export default () => (
     <div>
       <p>© Hirokuni Honda 2020, Built with Gatsby</p>
     </div>
-    <Contact>
+    <Contact id="contact">
       <h4>Contact</h4>
       <li>📩<a href="mailto:hirokuni0719@gmail.com">hirokuni0719@gmail.com</a></li>
       <li><a href="https://github.com/hiropalla1692/">Github</a></li>

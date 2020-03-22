@@ -12,7 +12,7 @@ const Box = posed.button({
   },
   hover: {
     scale: 1.2,
-    boxShadow: '0px 5px 10px rgba(0,0,0,0.2)'
+    boxShadow: '0px 5px 10px rgba(0,0,0,0.2)',
   },
   press: {
     scale: 1.1,
@@ -25,10 +25,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 height: 480px;
-background-color: #af8eb5;
-background-image: radial-gradient(#e1bee7 1px, transparent 1px);
-background-size: 20px 20px;
-z-index: -15;
 font-family: 'Montserrat', sans-serif;
 `
 

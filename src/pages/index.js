@@ -15,15 +15,16 @@ const StyledImg = styled(Img)`
   border-color: white;
 `
 const Billboard= styled.div`
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
   p {
-    position: absolute;
-    color: rebeccapurple;
-    font-size: 1.5em;
+    color: #3e3047;
+    font-size: 1.6em;
     font-family: 'Montserrat', sans-serif;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     margin:0;
     padding:0;
 
@@ -33,12 +34,16 @@ const Billboard= styled.div`
   }
 `
 
+const BillboardEmoji= styled.div`
+  font-size: 120px;
+  color: white;
+  margin: 0 5%;
+`
+
 const Wrapper= styled.div`
   display: flex;
   align-items: top;
-  background-color: #fff1ff;
   padding: 30px 240px;
-
   @media screen and (max-width:1024px) {
     flex-direction: column;
     padding: 8px 40px;
@@ -47,6 +52,14 @@ const Wrapper= styled.div`
 
 const ProfileTextBox= styled.div`
   padding: 15px 45px;
+  color: #3e3047;
+  a {
+      color: #3e3047;
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+  }
 
   @media screen and (max-width:768px) {
     padding: 5px 15px;
@@ -65,8 +78,9 @@ export default () => (
             <Layout> 
               <div id='root'>
                 <Billboard>
-                  <Img fluid={data.background.childImageSharp.fluid} style={{ maxHeight: 0.75*data.background.childImageSharp.fluid.presentationHeight}}/>
-                  <p>THANK YOU<br></br>FOR VISITING MY PORTFOLIO</p>
+                  {/*<Img fluid={data.background.childImageSharp.fluid} style={{ maxHeight: 0.75*data.background.childImageSharp.fluid.presentationHeight}}/>*/}
+                  <div><p>THANK YOU FOR<br></br>VISITING MY PORTFOLIO</p></div>
+                  <BillboardEmoji>[ 🛒 ]</BillboardEmoji>
                 </Billboard>
                 <TitleBox title="WHO&nbsp;&nbsp;I&nbsp;&nbsp;AM"/>
                 <Wrapper>
@@ -74,14 +88,14 @@ export default () => (
                     <StyledImg fixed={data.face.childImageSharp.fixed} />
                   </div>
                   <ProfileTextBox>
-                    <h3>Hirokuni Honda</h3>
-                    <h4 style={{color: '#616161'}}>What I did</h4>
+                    <h3 style={{color: '#3e3047'}}>Hirokuni Honda</h3>
+                    <h4 style={{color: '#3e3047'}}>What I did</h4>
                     <p>慶應義塾大学経済学部卒業後、物流企業にて貿易に関わる営業・現場運営を5年間担当。
                       好きな楽曲から自分だけの英単語帳を作ってみたいと思い、2019年からRuby on RailsやJavaScriptの学習を開始。
                       開発を進める過程で、使いやすさや視覚的な部分へのこだわりが強いと自覚し、React.js等のフロントエンドに注力。
                       自分のアイデアやこだわりをダイレクトに表現できて、世界中の人々(ユーザー)と共有することができるエンジニアという職業に惹かれるようになり転職を決意した。
                     </p>
-                    <h4 style={{color: '#616161'}}>What I can do now</h4>
+                    <h4 style={{color: '#3e3047'}}>What I can do now</h4>
                     <p>
                       - HTML / CSS<br></br>
                       - Javascript<br></br>
@@ -89,12 +103,12 @@ export default () => (
                       - React.js<br></br>
                       - English (<a href="http://cadillacs-in-our-dreams.surge.sh/"><strong>映画レビューblog</strong></a>をたまに書いてます。)<br></br>
                     </p>
-                    <h4 style={{color: '#616161'}}>What I will do</h4>
+                    <h4 style={{color: '#3e3047'}}>What I will do</h4>
                     <p>
                       - Redux<br></br>
                       - Typescript<br></br>
                     </p>
-                    <h4 style={{color: '#616161'}}>What I've been into </h4>
+                    <h4 style={{color: '#3e3047'}}>What I've been into </h4>
                     <p>
                       - レコード🎧収集<br></br>
                       - アメリカ企業🇺🇸のAnnual Report読解<br></br>

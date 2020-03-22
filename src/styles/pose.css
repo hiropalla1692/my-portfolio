@@ -1,9 +1,10 @@
 .box {
-  height: 64px;
-  width: 240px;
-  font-size: 13px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
   background-color: #3e3047;
   color: white;
-  border-color: #3e3047;
   outline: none;
 }

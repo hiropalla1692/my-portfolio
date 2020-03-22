@@ -8,11 +8,8 @@ const Wrapper = styled.div`
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
-height: 1080px;
-margin-top: 60px;
-margin-bottom: 60px;
+height: 1200px;
 align-items: center;
-background-color: #fff1ff;
 font-family: 'Montserrat', sans-serif;
 `
 const MyWorkBox = styled.div`
@@ -24,12 +21,17 @@ align-items: center;
 `
 
 const MyWork = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
 height: 300px;
 width: 300px;
 margin: 3% 3%;
 border-radius: 13px;
 vertical-align: middle;
 text-align: center;
+font-size: 80px;
+color: white;
   @media screen and (max-width:768px) {
     height: 200px;
     width: 200px;
@@ -50,8 +52,7 @@ background-color: #3e3047;
 font-size: 15px;
 color: #d0cfe2;
 border: solid 2px;
-border-radius: 13px;
-border-color: white;
+border-color: #3e3047;
 font-family: 'Arvo', sans-serif;
   &:hover {
       color: white;
@@ -111,7 +112,8 @@ function MyWorks(props) {
       <Wrapper>
       <MyWorkBox>
         <MyWork>
-          <StyledImg fluid={data.vocamy.childImageSharp.fluid} />
+          {/*<StyledImg fluid={data.vocamy.childImageSharp.fluid} />*/}
+          [ 1 ]
         </MyWork>
         <MyWorkDetail>
           <h2>Vocamy🥑</h2>
@@ -126,12 +128,14 @@ function MyWorks(props) {
           <Link to="/myportfolio"><Button>>>> Go into details</Button></Link>
         </MyWorkDetail>
         <MyWork>
-        <StyledImg fluid={data.myportfolio.childImageSharp.fluid} />
+          {/*<StyledImg fluid={data.myportfolio.childImageSharp.fluid} />*/}
+          [ 2 ]
         </MyWork>
       </MyWorkBox>
       <MyWorkBox>
         <MyWork>
-          <StyledImg fluid={data.instanturlsender.childImageSharp.fluid} />
+          {/*<StyledImg fluid={data.instanturlsender.childImageSharp.fluid} />*/}
+          [ 3 ]
         </MyWork>
         <MyWorkDetail>
           <h2>Instant URL Sender📩</h2>

@@ -26,7 +26,6 @@ const Button = styled.button`
   width: 12rem;
   background: black;
   color: white;
-  border: 2px solid white;
   &:hover {
     background-color: gray;
     color: white;
