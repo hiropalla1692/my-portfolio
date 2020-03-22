@@ -1,7 +1,5 @@
 import React from "react"
 import styled from 'styled-components'
-import { Link } from "gatsby"
-import Twittericon from '../components/twittericon'
 import Githubicon from '../components/githubicon'
 
 const Wrapper = styled.div`
@@ -40,7 +38,7 @@ const Menu = styled.ul`
   height: 88vh;
   width: 40%;
   top: 6vh;
-  background-color: black;
+  background-color: #3e3047;
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
 

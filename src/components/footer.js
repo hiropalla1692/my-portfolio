@@ -44,14 +44,14 @@ const Contact = styled.div`
 
 export default () => (
   <Wrapper>
-    <div>
-      <p>© Hirokuni Honda 2020, Built with Gatsby</p>
-    </div>
     <Contact id="contact">
       <h4>Contact</h4>
       <li>📩<a href="mailto:hirokuni0719@gmail.com">hirokuni0719@gmail.com</a></li>
       <li><a href="https://github.com/hiropalla1692/">Github</a></li>
       <li><a href="https://www.wantedly.com/users/82225561">Wantedly</a></li>
     </Contact>
+    <div>
+      <p>© Hirokuni Honda 2020, Built with Gatsby</p>
+    </div>
   </Wrapper>
 )

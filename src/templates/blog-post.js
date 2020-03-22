@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import styled from 'styled-components'
-import Layout from "../components/layout"
 
 const ArticleDisplay = styled.div`
   margin: 4em 12em;

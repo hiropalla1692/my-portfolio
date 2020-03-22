@@ -1,19 +1,25 @@
-
 import React from "react"
 import styled from 'styled-components'
 import Layout from "../components/layout"
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-
 const Container = styled.div`
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  background-color: #fff1ff;
 `
 const Block = styled.div`
-  margin: 3em 3em;
+  margin: 3em 15em;
+  @media screen and (max-width:960px) {
+    margin: 3em 6em;
+    font-size: 16px;
+  }
+  @media screen and (max-width:480px) {
+    margin: 3em 3em;
+    font-size: 12px;
+  }
 `
 const Styledh4 = styled.h4`
   margin: 2em 0 0.5em 0;
@@ -32,7 +38,7 @@ const Button = styled.button`
     color: white;
     }
   @media screen and (max-width:480px) {
-  font-size: 9px;
+  font-size: 12px;
   width: 7rem;
   }
   a {

@@ -28,28 +28,18 @@ height: 480px;
 font-family: 'Montserrat', sans-serif;
 `
 
-const StyledButton = styled.button`
-height: 64px;
-width: 240px;
-font-size: 13px;
-background-color: #3e3047;
-color: white;
-border-color: #3e3047;
-`
-
 class TitleBox extends React.Component {
   constructor(props) {
     super(props);
   }
-
   render() {
     return (
       <Wrapper>
         <Box className="box" >{this.props.title}</Box>
       </Wrapper>
     )
-  }
-}
+  };
+};
 
 export default TitleBox;
 

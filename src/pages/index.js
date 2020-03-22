@@ -1,10 +1,9 @@
 import React from "react"
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from "../components/layout"
 import TitleBox from "../components/titlebox"
 import MyWorks from "../components/myworks"
-import ModalWindow from "../components/modalwindow"
 import styled from 'styled-components'
 
 
@@ -19,17 +18,22 @@ const Billboard= styled.div`
   align-items: center;
   justify-content: center;
   height: 650px;
+  @media screen and (max-width:480px) {
+    height: 350px;
+  }
   p {
     color: #3e3047;
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-family: 'Montserrat', sans-serif;
     top: 50%;
     left: 50%;
     margin:0;
     padding:0;
-
+    @media screen and (max-width:768px) {
+    font-size: 1.2em;
+    }
     @media screen and (max-width:480px) {
-    font-size: 1em;
+    font-size: 0.9em;
     }
   }
 `
@@ -38,6 +42,12 @@ const BillboardEmoji= styled.div`
   font-size: 120px;
   color: white;
   margin: 0 5%;
+  @media screen and (max-width:768px) {
+    font-size: 80px;
+  }
+  @media screen and (max-width:480px) {
+      font-size: 50px;
+  }
 `
 
 const Wrapper= styled.div`
@@ -47,7 +57,7 @@ const Wrapper= styled.div`
   @media screen and (max-width:1024px) {
     flex-direction: column;
     padding: 8px 40px;
-    }
+  }
 `
 
 const ProfileTextBox= styled.div`
@@ -60,16 +70,16 @@ const ProfileTextBox= styled.div`
         color: white;
       }
   }
-
   @media screen and (max-width:768px) {
     padding: 5px 15px;
     }
-    @media screen and (max-width:480px) {
-      p {
-        font-size: 12px;
-      }
+  @media screen and (max-width:480px) {
+    p {
+      font-size: 13px;
     }
+  }
 `
+const shoppingcart = "{ 🛒 }"
 
 export default () => (
   <StaticQuery
@@ -79,8 +89,8 @@ export default () => (
               <div id='root'>
                 <Billboard>
                   {/*<Img fluid={data.background.childImageSharp.fluid} style={{ maxHeight: 0.75*data.background.childImageSharp.fluid.presentationHeight}}/>*/}
-                  <div><p>THANK YOU FOR<br></br>VISITING MY PORTFOLIO</p></div>
-                  <BillboardEmoji>[ 🛒 ]</BillboardEmoji>
+                  <div><p>MY PORTFOLIO</p><p style={{color: 'white'}}>MY PORTFOLIO</p><p>MY PORTFOLIO</p></div>
+                  <BillboardEmoji>{shoppingcart}</BillboardEmoji>
                 </Billboard>
                 <TitleBox title="WHO&nbsp;&nbsp;I&nbsp;&nbsp;AM"/>
                 <Wrapper>
@@ -91,9 +101,9 @@ export default () => (
                     <h3 style={{color: '#3e3047'}}>Hirokuni Honda</h3>
                     <h4 style={{color: '#3e3047'}}>What I did</h4>
                     <p>慶應義塾大学経済学部卒業後、物流企業にて貿易に関わる営業・現場運営を5年間担当。
-                      好きな楽曲から自分だけの英単語帳を作ってみたいと思い、2019年からRuby on RailsやJavaScriptの学習を開始。
+                      好きな音楽の歌詞から自分だけの英単語帳を作ってみたくなり、2019年からRuby on RailsやJavaScriptの学習を開始。
                       開発を進める過程で、使いやすさや視覚的な部分へのこだわりが強いと自覚し、React.js等のフロントエンドに注力。
-                      自分のアイデアやこだわりをダイレクトに表現できて、世界中の人々(ユーザー)と共有することができるエンジニアという職業に惹かれるようになり転職を決意した。
+                      アイデアやこだわりをダイレクトに表現できて、世界中の人々(ユーザー)と共有することができるエンジニアという職業に惹かれるようになり転職を決意。
                     </p>
                     <h4 style={{color: '#3e3047'}}>What I can do now</h4>
                     <p>
@@ -103,7 +113,7 @@ export default () => (
                       - React.js<br></br>
                       - English (<a href="http://cadillacs-in-our-dreams.surge.sh/"><strong>映画レビューblog</strong></a>をたまに書いてます。)<br></br>
                     </p>
-                    <h4 style={{color: '#3e3047'}}>What I will do</h4>
+                    <h4 style={{color: '#3e3047'}}>What now I try</h4>
                     <p>
                       - Redux<br></br>
                       - Typescript<br></br>
@@ -112,7 +122,6 @@ export default () => (
                     <p>
                       - レコード🎧収集<br></br>
                       - アメリカ企業🇺🇸のAnnual Report読解<br></br>
-                      - Podcast📻運営<br></br>
                     </p>
                   </ProfileTextBox>
                 </Wrapper>

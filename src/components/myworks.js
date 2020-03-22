@@ -1,5 +1,4 @@
 import React from "react"
-import ModalWindow from "../components/modalwindow"
 import styled from 'styled-components'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
@@ -11,6 +10,10 @@ justify-content: center;
 height: 1200px;
 align-items: center;
 font-family: 'Montserrat', sans-serif;
+@media screen and (max-width:480px) {
+    height: 800px;
+    font-size: 30px;
+  }
 `
 const MyWorkBox = styled.div`
 width: 100%;
@@ -19,7 +22,6 @@ flex-flow: row nowrap;
 justify-content: center;
 align-items: center;
 `
-
 const MyWork = styled.div`
 display: flex;
 align-items: center;
@@ -35,15 +37,19 @@ color: white;
   @media screen and (max-width:768px) {
     height: 200px;
     width: 200px;
-    font-size: 5px;
+    font-size: 40px;
   }
   @media screen and (max-width:480px) {
     height: 150px;
     width: 150px;
+    font-size: 30px;
   }
 `
 
 const MyWorkDetail = styled.div`
+display: flex;
+flex-flow: column nowrap;
+justify-content: space-around;
 height: 300px;
 width: 300px;
 margin: 3% 3%;
@@ -74,13 +80,13 @@ font-family: 'Arvo', sans-serif;
     width: 150px;
     font-size: 9px;
       h2 {
+        margin: 0;
         font-size: 13px;
       }
       p {
         margin: 0 0 5px 0 ;
       }
   }
-
 `
 const Button = styled.button`
   display: inline-block;
@@ -96,13 +102,10 @@ const Button = styled.button`
     }
   @media screen and (max-width:480px) {
   font-size: 9px;
-  width: 7rem;
+  padding: 0.2rem 0;
+  width: 6rem;
   }
 `
-const StyledImg = styled(Img)`
-  border-radius: 13px !important;
-`
-
 
 function MyWorks(props) {
   return (
@@ -117,14 +120,14 @@ function MyWorks(props) {
         </MyWork>
         <MyWorkDetail>
           <h2>Vocamy🥑</h2>
-          <p>enable you to aquire new vocablary refering to your favorite lyrics.</p>
+          <p>enables you to aquire new vocablary refering to your favorite lyrics.</p>
           <Link to="/vocamy"><Button>>>> Go into details</Button></Link>
         </MyWorkDetail>
       </MyWorkBox>
       <MyWorkBox>
         <MyWorkDetail>
           <h2>This Portfolio☕️</h2>
-          <p> simply describe who I am and introduce my works with Gatsby.js</p>
+          <p> simply describes who I am and introduce my works with Gatsby.js</p>
           <Link to="/myportfolio"><Button>>>> Go into details</Button></Link>
         </MyWorkDetail>
         <MyWork>
@@ -148,7 +151,6 @@ function MyWorks(props) {
     />
   )
 }
-
 
 const query = graphql`
     query {
