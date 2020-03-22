@@ -80,7 +80,7 @@ export default () => {
             しかしながら、GraphQLの理解は十分で無いため、引き続き学習を続けていきたい。<br></br>
           </p>
           <Link to="/"><Button>>>> Back</Button></Link>
-          <Button><a href="https://github.com/hiropalla1692/my-portfolio">>>> Go to Gitgub</a></Button>
+          <Button><a target="_blank" href="https://github.com/hiropalla1692/my-portfolio">>>> Go to Gitgub</a></Button>
         </Block>
       </Container>
     </Layout>

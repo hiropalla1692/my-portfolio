@@ -111,7 +111,7 @@ export default () => (
                       - Javascript<br></br>
                       - Ruby (基礎)<br></br>
                       - React.js<br></br>
-                      - English (<a href="http://cadillacs-in-our-dreams.surge.sh/"><strong>映画レビューblog</strong></a>をたまに書いてます。)<br></br>
+                      - English (<a target="_blank" href="http://cadillacs-in-our-dreams.surge.sh/"><strong>映画レビューblog</strong></a>をたまに書いてます。)<br></br>
                     </p>
                     <h4 style={{color: '#3e3047'}}>What now I try</h4>
                     <p>

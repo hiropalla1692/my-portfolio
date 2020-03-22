@@ -1,5 +1,5 @@
 import React from "react"
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
@@ -59,7 +59,15 @@ font-size: 15px;
 color: #d0cfe2;
 border: solid 2px;
 border-color: #3e3047;
+border-radius: 10px;
+box-shadow: 16px 16px white;
 font-family: 'Arvo', sans-serif;
+${props =>
+    props.reverse &&
+    css`
+      box-shadow: -16px 16px white;
+  `};
+
   &:hover {
       color: white;
       }
@@ -79,6 +87,12 @@ font-family: 'Arvo', sans-serif;
     height: 150px;
     width: 150px;
     font-size: 9px;
+    box-shadow: 3px 3px white;
+    ${props =>
+      props.reverse &&
+      css`
+      box-shadow: -3px 3px white;
+    `};
       h2 {
         margin: 0;
         font-size: 13px;
@@ -125,7 +139,7 @@ function MyWorks(props) {
         </MyWorkDetail>
       </MyWorkBox>
       <MyWorkBox>
-        <MyWorkDetail>
+        <MyWorkDetail reverse>
           <h2>This Portfolio☕️</h2>
           <p> simply describes who I am and introduce my works with Gatsby.js</p>
           <Link to="/myportfolio"><Button>>>> Go into details</Button></Link>

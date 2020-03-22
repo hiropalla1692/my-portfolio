@@ -78,7 +78,7 @@ export default () => {
             ・完成物がシンプルなので、今後はTypescriptを導入してコードを書き換えてみたいと思う。<br></br>
           </p>
           <Link to="/"><Button>>>> Back</Button></Link>
-          <Button><a href="https://github.com/hiropalla1692/cadillacs-in-our-dreams">>>> Go to Gitgub</a></Button>
+          <Button><a target="_blank" href="https://github.com/hiropalla1692/cadillacs-in-our-dreams">>>> Go to Gitgub</a></Button>
         </Block>
       </Container>
     </Layout>

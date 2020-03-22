@@ -12,7 +12,7 @@ const GithubIcon = styled.svg`
 
 export default () => {
   return (
-      <a href="https://github.com/hiropalla1692/">
+      <a target="_blank" href="https://github.com/hiropalla1692/">
       <GithubIcon 
         version="1.1"  
         xmlns="http://www.w3.org/2000/svg"  

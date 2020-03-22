@@ -125,7 +125,7 @@ export default () => (
         <a href="/">HIROKUNI HONDA</a>
       </div>
       <Menu id="b">
-        <MenuList><a href="http://cadillacs-in-our-dreams.surge.sh/">BLOG</a></MenuList>
+        <MenuList><a target="_blank" href="http://cadillacs-in-our-dreams.surge.sh/">BLOG</a></MenuList>
         <MenuList><a href="#contact">CONTACT</a></MenuList>
         <Githubicon/>
       </Menu>
