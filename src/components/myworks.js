@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
-height: 1200px;
+height: 1600px;
 align-items: center;
 font-family: 'Montserrat', sans-serif;
 @media screen and (max-width:480px) {
@@ -133,14 +133,14 @@ function MyWorks(props) {
           [ 1 ]
         </MyWork>
         <MyWorkDetail>
-          <h2>Vocamy🥑</h2>
+          <h2>Vocamy 🥑</h2>
           <p>enables you to aquire new vocablary refering to your favorite lyrics.</p>
           <Link to="/vocamy"><Button>>>> Go into details</Button></Link>
         </MyWorkDetail>
       </MyWorkBox>
       <MyWorkBox>
         <MyWorkDetail reverse>
-          <h2>This Portfolio☕️</h2>
+          <h2>This Portfolio ☕️</h2>
           <p> simply describes who I am and introduce my works with Gatsby.js</p>
           <Link to="/myportfolio"><Button>>>> Go into details</Button></Link>
         </MyWorkDetail>
@@ -155,10 +155,21 @@ function MyWorks(props) {
           [ 3 ]
         </MyWork>
         <MyWorkDetail>
-          <h2>Instant URL Sender📩</h2>
+          <h2>Instant URL Sender 📩</h2>
           <p> is a Chrome extension which gives you seamless experience between PC and cellphone</p>
           <Link to="/chrome_extension"><Button>>>> Go into details</Button></Link>
         </MyWorkDetail>
+      </MyWorkBox>
+      <MyWorkBox>
+        <MyWorkDetail reverse>
+          <h2>COVID-19<br></br>Visualizer 🦠</h2>
+          <p> shows the graphs of COVID-19 infection with Typescript</p>
+          <Link to="/covid_19"><Button>>>> Go into details</Button></Link>
+        </MyWorkDetail>
+        <MyWork>
+          {/*<StyledImg fluid={data.myportfolio.childImageSharp.fluid} />*/}
+          [ 4 ]
+        </MyWork>
       </MyWorkBox>
     </Wrapper>
     )}

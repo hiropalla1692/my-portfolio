@@ -75,11 +75,12 @@ const ProfileTextBox= styled.div`
     }
   @media screen and (max-width:480px) {
     p {
-      font-size: 13px;
+      font-size: 14px;
     }
   }
 `
-const shoppingcart = "{ 🛒 }"
+const emojis = ["🥑","🛒","🎸","💅", "🦱", "🎧", "🦠"];
+const randomNo = Math.floor( Math.random() * emojis.length);
 
 export default () => (
   <StaticQuery
@@ -90,7 +91,7 @@ export default () => (
                 <Billboard>
                   {/*<Img fluid={data.background.childImageSharp.fluid} style={{ maxHeight: 0.75*data.background.childImageSharp.fluid.presentationHeight}}/>*/}
                   <div><p>MY PORTFOLIO</p><p style={{color: 'white'}}>MY PORTFOLIO</p><p>MY PORTFOLIO</p></div>
-                  <BillboardEmoji>{shoppingcart}</BillboardEmoji>
+                  <BillboardEmoji>{`{ ${emojis[randomNo]} }`}</BillboardEmoji>
                 </Billboard>
                 <TitleBox title="WHO&nbsp;&nbsp;I&nbsp;&nbsp;AM"/>
                 <Wrapper>
@@ -101,22 +102,23 @@ export default () => (
                     <h3 style={{color: '#3e3047'}}>Hirokuni Honda</h3>
                     <h4 style={{color: '#3e3047'}}>What I did</h4>
                     <p>慶應義塾大学経済学部卒業後、物流企業にて貿易に関わる営業・現場運営を5年間担当。
-                      好きな音楽の歌詞から自分だけの英単語帳を作ってみたくなり、2019年からRuby on RailsやJavaScriptの学習を開始。
+                      プログラミングを始めたきっかけは、好きな音楽の歌詞から自分だけの英単語帳を作ってみたくなったため。2019年からRuby on RailsやJavaScriptの学習を開始。
                       開発を進める過程で、使いやすさや視覚的な部分へのこだわりが強いと自覚し、React.js等のフロントエンドに注力。
-                      アイデアやこだわりをダイレクトに表現できて、世界中の人々(ユーザー)と共有することができるエンジニアという職業に惹かれるようになり転職を決意。
+                      アイデアやこだわりをダイレクトに表現できて、世界中の人々(ユーザー)と共有することができるエンジニアという職業に惹かれるようになった。
                     </p>
                     <h4 style={{color: '#3e3047'}}>What I can do now</h4>
                     <p>
                       - HTML / CSS<br></br>
                       - Javascript<br></br>
-                      - Ruby (基礎)<br></br>
+                      - Typescript<br></br>
+                      - Ruby / Ruby on Rails<br></br>
                       - React.js<br></br>
                       - English (<a target="_blank" href="http://cadillacs-in-our-dreams.surge.sh/"><strong>映画レビューblog</strong></a>をたまに書いてます。)<br></br>
                     </p>
                     <h4 style={{color: '#3e3047'}}>What now I try</h4>
                     <p>
                       - Redux<br></br>
-                      - Typescript<br></br>
+                      - AWS<br></br>
                     </p>
                     <h4 style={{color: '#3e3047'}}>What I've been into </h4>
                     <p>
