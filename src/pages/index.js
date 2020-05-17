@@ -89,7 +89,6 @@ export default () => (
             <Layout> 
               <div id='root'>
                 <Billboard>
-                  {/*<Img fluid={data.background.childImageSharp.fluid} style={{ maxHeight: 0.75*data.background.childImageSharp.fluid.presentationHeight}}/>*/}
                   <div><p>MY PORTFOLIO</p><p style={{color: 'white'}}>MY PORTFOLIO</p><p>MY PORTFOLIO</p></div>
                   <BillboardEmoji>{`{ ${emojis[randomNo]} }`}</BillboardEmoji>
                 </Billboard>
@@ -144,15 +143,6 @@ const query = graphql`
                     ...GatsbyImageSharpFixed
                   }
             }
-        },
-        background: file(relativePath: {eq: "newyork.jpg"}) {
-          childImageSharp{
-            fluid( maxWidth: 1280, quality: 100, grayscale: true)
-                {
-                  ...GatsbyImageSharpFluid
-                  presentationHeight
-                }
-          }
-      }
+        }
     }
 `
