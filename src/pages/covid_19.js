@@ -63,6 +63,8 @@ export default () => {
           <Img fluid={data.covid_19.childImageSharp.fluid} />
         </Block>
         <Block>
+          <Styledh4>サービスURL：</Styledh4>
+            <a herf="http://covid-19-visualizer.surge.sh/">COVID-19 Visualizer 🦠</a>
           <Styledh4>使用技術：</Styledh4>
           <p>React Hooks / Typescript / Material UI / HTML / CSS</p>
           <Styledh4>詳細：</Styledh4>

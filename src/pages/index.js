@@ -82,6 +82,10 @@ const ProfileTextBox= styled.div`
 const emojis = ["🥑","🛒","🎸","💅", "🦱", "🎧", "🦠"];
 const randomNo = Math.floor( Math.random() * emojis.length);
 
+const showOnScroll = () => {
+    console.log("hello");
+}
+
 export default () => (
   <StaticQuery
         query={query}
@@ -93,7 +97,7 @@ export default () => (
                   <BillboardEmoji>{`{ ${emojis[randomNo]} }`}</BillboardEmoji>
                 </Billboard>
                 <TitleBox title="WHO&nbsp;&nbsp;I&nbsp;&nbsp;AM"/>
-                <Wrapper>
+                <Wrapper onScroll={showOnScroll()}>
                   <div>
                     <StyledImg fixed={data.face.childImageSharp.fixed} />
                   </div>
@@ -122,7 +126,7 @@ export default () => (
                     <h4 style={{color: '#3e3047'}}>What I've been into </h4>
                     <p>
                       - レコード🎧収集<br></br>
-                      - アメリカ企業🇺🇸のAnnual Report読解<br></br>
+                      - <a target="_blank" href="https://anchor.fm/eazymoney">米国株のPodcast配信🎙</a><br></br>
                     </p>
                   </ProfileTextBox>
                 </Wrapper>

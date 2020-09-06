@@ -59,11 +59,13 @@ export default () => {
       <Container>
         <Block>
           <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vocamy🥑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-          <Img fluid={data.vocamy.childImageSharp.fluid} />
         </Block>
         <Block>
+          <Img fluid={data.vocamy.childImageSharp.fluid} />    
+          <Styledh4>サービスURL：</Styledh4>
+          <a href="https://www.vocamy.xyz/" target="_blank">Vocamy</a>
           <Styledh4>使用技術：</Styledh4>
-          <p>Ruby on Rails / React / Javascript / HTML / CSS</p>
+          <p>Ruby on Rails / React / Heroku / Javascript / HTML / CSS</p>
           <Styledh4>詳細：</Styledh4>
           <p>気になる曲のリリックから簡単に自分だけの単語帳を作ることができるアプリケーション。曲名の検索やリリック表示にはMusixmatch APIを利用。<br></br>
             使い方は簡単。<br></br>
@@ -94,9 +96,9 @@ export default () => {
 
 const query = graphql`
     query {
-        vocamy: file(relativePath: {eq: "vocamy_screenshot.png"}) {
+        vocamy: file(relativePath: {eq: "vocamy1.png"}) {
           childImageSharp{
-            fluid( maxWidth: 450, quality: 100)
+            fluid( maxWidth: 720, quality: 100)
                 {
                   ...GatsbyImageSharpFluid
                 }
